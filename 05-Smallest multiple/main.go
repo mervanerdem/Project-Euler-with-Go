@@ -11,7 +11,7 @@ func main() {
 	a := 2520 * 11 * 12 * 13 * 14 * 15 * 16 * 17 * 18 * 19 * 20
 	b := 0
 	result := 0
-	for i := 2520; i < a; i++ {
+	for i := 2520; i < a; i += 2520 { //ilk 10 sayı için zaten en küçük bölen sayı 2520 bunun katlarını kontrol etmemiz gerekmekte
 		for j := 1; j <= 20; j++ {
 			if i%j == 0 {
 				b++
@@ -32,3 +32,5 @@ func main() {
 	fmt.Println(result)
 
 }
+
+//232792560
