@@ -21,7 +21,6 @@ func main() {
 			}
 		}
 		if x != 1 {
-			fmt.Println(i)
 			slc = append(slc, i)
 		}
 		ix++
